@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet"> 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style>
+        body {
+            margin:0;
+            height:100vh;
+        }
+        .container {
+            display: flex;
+            height:100%;
+            margin: 0;
+            background-color: #f2f2f2;
+            justify-content: center;
+            align-items: center;
+        }
+        .horizontal {
+            width:100vw;
+        }
+        .vertical {
+            flex-direction: column;
+
+        }
+        .vLine {
+            background-color: #281f1e;
+            width:2px;
+            height: 100%;
+        }
+        .hLine {
+            background-color: #281f1e;
+            height:2px;
+            width: 100%;
+        }
+        .downArrow {
+            width: 0;
+            height: 0; 
+            border-right: 0.5em solid transparent;
+            border-left: 0.5em solid transparent;
+            border-top: 0.7em solid #281f1e;
+        }
+        .upArrow {
+            width: 0;
+            height: 0; 
+            border-right: 0.5em solid transparent;
+            border-left: 0.5em solid transparent;
+            border-bottom: 0.7em solid #281f1e;
+        }
+        .rightArrow {
+            width: 0;
+            height: 0; 
+            border-top: 0.5em solid transparent;
+            border-bottom: 0.5em solid transparent;
+            border-left: 0.7em solid #281f1e;
+        }
+        .leftArrow {
+            width: 0;
+            height: 0; 
+            border-top: 0.5em solid transparent;
+            border-bottom: 0.5em solid transparent;
+            border-right: 0.7em solid #281f1e;
+        }
+        .centerItem {
+
+        }
+        .item {
+            flex:1;
+        }
+        .circleBorder:before {
+            content:'';
+            float: left;
+            width: auto;
+            padding-bottom: 100%;
+        
+        }
+        .circleInner {
+            margin: 2em;
+        }
+        .circleBorder {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 1em;
+            border-radius: 50%;
+            vertical-align: middle;
+            border-width: 1.5px;
+            border-style: solid;
+            border-color: #281f1e;
+        }
+        .Title {
+            font-family: 'Old Standard TT', serif;
+            font-weight: normal;
+            color: #281f1e;
+            margin: 0.5em;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .Subtext {
+            font-family: 'Old Standard TT', serif;
+            font-weight: normal;
+            color: #281f1e;
+            line-height: 1.5;
+            margin: 0.2;
+            font-size: 1em;
+            text-align: center;
+        }
+        .button {
+            padding:0.3em;
+        }
+        .label {
+            font-family: 'Old Standard TT', serif;
+            font-weight: normal;
+            color: #281f1e;
+            margin: 0;
+            font-size: 0.7em;
+            text-align: center;
+        }
+        a {
+            color: #281f1e;
+             
+        }
+        
+    </style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Layout Test</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="vertical container">
+        <div class="item">
+            <div class="vertical container">
+                <div class="item">
+                    </div>
+                    <div class="centerItem" >
+                        <h1 class="Title">
+                            Should You Do The Thing?
+                        </h1>
+                        <p class="Subtext">
+                            Decisions demystified
+                        </p>  
+                    </div>
+                    <div class="item">     
+                </div>
+            </div>
+        </div>
+        <div class="centerItem" >
+            <div class="container horizontal">
+                    <div class="leftArrow"></div>
+                    <div class="item">
+                            <div class="hLine"></div>
+                        </div>
+                        <div class="centerItem" >
+                            <div class="circleBorder">
+                                <div class="circleInner">
+                                    <p class="Subtext">
+                                            Coming Soon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="hLine"></div>
+                                
+                        </div>
+                        <div class="rightArrow"></div>
+                        
+            </div>
+                
+        </div>
+        <div class="item">
+                <div class="vertical container">
+                        <div class="item">
+                                <div class="vLine"></div>
+                            </div>
+                            <div class="centerItem button" >
+                                <p class="label">
+                                    Developed by <a href="http://alexanderhicks.net">Alex Hicks</a>
+                                </p>
+                               
+                                        
+                            </div>
+                            <div class="item">
+                                    <div class="vLine"></div>
+                                    
+                            </div>
+                            <div class="downArrow">
+                            </div>
+
+                
+
+                </div>
+                    
+        </div>
+       
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

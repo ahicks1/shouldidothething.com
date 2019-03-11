@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
 .App {
   text-align: center;
+  flex:1;
+  height:100vh;
+  display: grid;
+  grid-template-columns: 33% 1fr 33%;
+  grid-template-rows: 33% 33% 33%;
+  background-color: #f2f2f2;
 }
 
 .App-logo {
@@ -7,20 +15,66 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.Title {
+  font-family: 'Old Standard TT', serif;
+  font-weight: normal;
+  color: #281f1e;
+  margin: 0.5em;
+  margin-top: 5em;
+  font-size: 1.2em;
+}
+.Subtext {
+  font-family: 'Old Standard TT', serif;
+  font-weight: normal;
+  color: #281f1e;
+  line-height: 1.5;
+  margin: 0.2;
+  font-size: 0.7em;
+  text-justify: center;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.circleBorder {
+  margin-top: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1em;
+  border-radius: 50%;
+  vertical-align: middle;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #281f1e;
+}
+
+.circleBorder:before {
+  content:'';
+  float: left;
+  width: auto;
+  padding-bottom: 100%;
+}
+.circleInner {
+  margin: 2em;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+hr {
+  border: none;
+  width: 1.5px;
+  margin-top: 0;
+  /* Set the hr color */
+  color: #281f1e; /* old IE */
+  background-color: #281f1e; /* Modern Browsers */
 }
 
 @keyframes App-logo-spin {

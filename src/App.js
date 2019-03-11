@@ -6,20 +6,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+      <div></div>
+      <div className="item2">
+        <header className="item item1 App-header">
+          <h1 className="Title">Should You Do The Thing?</h1>
+          <p className="Subtext">
+            Decision making made easy <br/>
+            Developed by Alexander Hicks
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div className="circleBorder">
+            <p className="circleInner Subtext">Start</p>
+          </div>
+          <hr size="200"></hr>
         </header>
+        </div>
       </div>
     );
   }
